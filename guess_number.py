@@ -14,3 +14,7 @@ while exit != True:
             exit = True
         else:
             print(f"Incorrect. Please try again!")
+            if int(guess) > number:
+                print("Your guess is too high!")
+            elif int(guess) < number:
+                print("Your guess is too low.")
