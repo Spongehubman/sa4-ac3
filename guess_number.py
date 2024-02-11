@@ -22,3 +22,8 @@ while exit != True:
             elif guesses_left > 0 and guesses_left == 1:
                 print(f"Please try again! You have {guesses_left} guess left!")
 
+            if guesses_left > 0:
+                if int(guess) > number:
+                    print("Your guess is too high!")
+                elif int(guess) < number:
+                    print("Your guess is too low.")
